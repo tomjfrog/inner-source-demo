@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tomjfrog</groupId>
+    <artifactId>systemtimeapp</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.tomfjrog</groupId>
+            <artifactId>system-time-printer</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>tomjfrog.jfrog.io-releases</name>
+            <url>https://tomjfrog.jfrog.io/artifactory/systemtimeapp-libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>tomjfrog.jfrog.io-snapshots</name>
+            <url>https://tomjfrog.jfrog.io/artifactory/systemtimeapp-libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
